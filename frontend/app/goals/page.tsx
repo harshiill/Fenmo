@@ -19,9 +19,6 @@ interface GoalInsight {
   progress_percent?: number
 }
 
-interface InsightData {
-  goal_insights: GoalInsight[]
-}
 
 export default function GoalsPage() {
   const { goals, setGoals, removeGoal, isLoading, setLoading } = useGoalsStore()
